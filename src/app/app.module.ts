@@ -2,8 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 //Rutas
-
 import { APP_ROUTES } from './app.routes';
+
+//Modulos
+import { PagesModule } from './pages/pages.module';
+
+
 
 
 import { AppComponent } from './app.component';
@@ -24,19 +28,20 @@ import { RegisterComponent } from './login/register.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    NopagefoundComponent,
-    DashboardComponent,
-    ProgressComponent,
-    Graficas1Component,
-    HeaderComponent,
-    SidebarComponent,
-    BreadcrumbsComponent,
-    PagesComponent,
+    //NopagefoundComponent,
+    //DashboardComponent,
+    //ProgressComponent,
+    //Graficas1Component,
+    //HeaderComponent,
+    //SidebarComponent,
+    //BreadcrumbsComponent,
+    //PagesComponent,
     RegisterComponent
   ],
   imports: [
     BrowserModule,
-    APP_ROUTES
+    APP_ROUTES,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
