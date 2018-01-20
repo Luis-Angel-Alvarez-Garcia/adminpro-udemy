@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProgressComponent implements OnInit {
 
+
+  // tslint:disable-next-line:no-inferrable-types
+  porcentaje1: number = 20;
+  // tslint:disable-next-line:no-inferrable-types
+  porcentaje2: number = 30;
   constructor() { }
 
   ngOnInit() {
   }
-
 }
