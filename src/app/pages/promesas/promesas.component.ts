@@ -11,7 +11,7 @@ export class PromesasComponent implements OnInit {
 
   constructor() {
 
-    this.contarTres('ruta es esta', 'parametros estos').then(
+    this.contarTres().then(
       mensaje => console.log('Termino!', mensaje)
     )
     .catch( error => console.log('Error en la promesa',error));
